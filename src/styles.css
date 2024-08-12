@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
-<<<<<<< HEAD
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	display: flex;
@@ -11,19 +10,8 @@ body {
 	width: 100vw;
 	box-sizing: border-box;
 	background-color: #ededed;
-	padding: 8px;
-	font-family: 'Poppins', sans-serif;
-=======
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    box-sizing: border-box;
-    background-color: #EDEDED;
 
-    font-family: "Poppins", sans-serif;
->>>>>>> dd858459a2bbcb1bb69940e2a78bda27535d893b
+	font-family: 'Poppins', sans-serif;
 }
 
 *::-webkit-scrollbar {
