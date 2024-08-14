@@ -2,10 +2,11 @@ import './styles.css';
 
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './App.tsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Dashboard } from './pages/Dashboard/index.tsx';
 import { Sales } from './pages/Sales/index.tsx';
+import { Customers } from './pages/Customers/index.tsx';
+import { Storage } from './pages/Storage/index.tsx';
 
 const router = createBrowserRouter([
 	{
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
 	},
 	{
 		path: '/clientes',
-		element: <App />,
+		element: <Customers />,
 	},
 	{
 		path: '/vendas',
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
 	},
 	{
 		path: '/estoque',
-		element: <App />,
+		element: <Storage />,
 	},
 ]);
 
