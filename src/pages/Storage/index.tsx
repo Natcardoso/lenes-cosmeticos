@@ -2,8 +2,11 @@ import { Menu } from '../../components/Menu';
 
 export const Storage = () => {
 	return (
-		<div className="flex h-screen gap-2 w-screen border-solid border-2 p-2">
+		<main className="flex h-screen w-screen gap-2 border-solid border-2 p-2">
 			<Menu />
-		</div>
+			<section className="bg-white rounded-lg flex-1 p-5">
+				<h1 className="font-light tracking-[2rem] text-5xl uppercase">estoque</h1>
+			</section>
+		</main>
 	);
 };

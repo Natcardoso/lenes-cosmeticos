@@ -10,7 +10,12 @@ body {
 	width: 100vw;
 	box-sizing: border-box;
 	background-color: #ededed;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;	
+}
+
+input {
+	outline: none;
+	background: transparent;
 }
 
 *::-webkit-scrollbar {
