@@ -46,8 +46,11 @@ export const Dashboard = () => {
 			<div className="bg-white rounded-lg flex-1 p-5">
 				<h1 className="font-light tracking-[1.5rem] text-5xl mb-8">DASHBOARD</h1>
 				<div className="flex flex-wrap gap-4">
-					{cards.map((card) => (
-						<div className="flex flex-col items-center flex-1 p-4 shadow-[4px_4px_20px_#e3e3e3] rounded-md">
+					{cards.map((card, index) => (
+						<div
+							key={index}
+							className="flex flex-col items-center flex-1 p-4 shadow-[4px_4px_20px_#e3e3e3] rounded-md"
+						>
 							<div
 								style={{ background: card.background, color: card.color }}
 								className={`p-4 rounded-full mb-4`}

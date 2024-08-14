@@ -17,14 +17,15 @@ export const Menu = () => {
 				alt="Logo da Lene`s Cosméticos"
 				className=""
 			/>
-			<div className="flex items-center flex-col gap-8">
+			<div className="flex items-center flex-col gap-8 ">
 				{listMenu.map((item) => (
 					<NavLink
+						key={item.to}
 						to={item.to}
 						className={({ isActive }) =>
-							isActive
-								? 'bg-neutral-900 p-4 rounded-lg text-white cursor-pointer'
-								: 'cursor-pointer'
+							`cursor-pointer p-4 rounded-lg  ${
+								isActive ? 'bg-neutral-900 text-white' : 'text-black'
+							} hover:text-white hover:bg-neutral-900  transition ease-in opacity-95`
 						}
 					>
 						{item.svg}
