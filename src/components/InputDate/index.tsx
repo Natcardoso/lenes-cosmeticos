@@ -1,3 +1,4 @@
+/* Dependencies */
 import { CalendarDays } from 'lucide-react';
 
 export const InputDate = () => {

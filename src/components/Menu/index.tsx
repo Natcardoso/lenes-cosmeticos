@@ -1,6 +1,9 @@
-import { LayoutDashboard, Package, ShoppingBag, UserRound } from 'lucide-react';
-import Logo from '../../assets/logo.svg';
+/* Dependencies */
 import { NavLink } from 'react-router-dom';
+import { LayoutDashboard, Package, ShoppingBag, UserRound } from 'lucide-react';
+
+/* External */
+import Logo from '../../assets/logo.svg';
 
 export const Menu = () => {
 	const listMenu = [

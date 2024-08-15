@@ -1,3 +1,4 @@
+/* Dependencies */
 import { Search } from 'lucide-react';
 
 export const InputSearch = () => {

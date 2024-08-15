@@ -1,12 +1,16 @@
-import './styles.css';
-
+/* Dependencies */
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Dashboard } from './pages/Dashboard/index.tsx';
+
+/* Internal */
+import './styles.css';
+
+/* External */
 import { Sales } from './pages/Sales/index.tsx';
-import { Customers } from './pages/Customers/index.tsx';
 import { Storage } from './pages/Storage/index.tsx';
+import { Dashboard } from './pages/Dashboard/index.tsx';
+import { Customers } from './pages/Customers/index.tsx';
 
 const router = createBrowserRouter([
 	{

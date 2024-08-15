@@ -1,4 +1,6 @@
+/* Dependencies */
 import { HandCoins, Package, ShoppingBag, UserRound, Wallet } from 'lucide-react';
+/* External */
 import { Menu } from '../../components/Menu';
 
 export const Dashboard = () => {

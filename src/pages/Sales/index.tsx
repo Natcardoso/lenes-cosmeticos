@@ -1,9 +1,20 @@
+/* Dependencies */
+import { useState } from 'react';
+
+/* External */
 import { Menu } from '../../components/Menu';
-import { InputSearch } from '../../components/InputSearch';
-import { InputDate } from '../../components/InputDate';
+import { Modal } from '../../components/Modal';
 import { Button } from '../../components/Button';
+import { InputDate } from '../../components/InputDate';
+import { InputSearch } from '../../components/InputSearch';
 
 export const Sales = () => {
+	const [openModal, setOpenModal] = useState(false);
+
+	const clickOpenModal = () => {
+		setOpenModal(true);
+	};
+
 	return (
 		<main className="flex h-screen w-screen gap-2 border-solid border-2 p-2">
 			<Menu />
@@ -12,13 +23,14 @@ export const Sales = () => {
 
 				<div className="mt-14 flex gap-6">
 					<InputSearch />
-
 					<InputDate />
-
 					<Button
 						icone
 						text="Nova venda"
+						onClick={clickOpenModal}
 					/>
+
+					{openModal && <Modal isCLosed={() => setOpenModal(false)} />}
 				</div>
 			</section>
 		</main>
