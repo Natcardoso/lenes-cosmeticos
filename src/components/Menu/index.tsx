@@ -14,7 +14,7 @@ export const Menu = () => {
 		<div className="flex flex-col items-center gap-14 h-full w-20 bg-white rounded-lg p-2">
 			<img
 				src={Logo}
-				alt="Logo da Lene`s Cosméticos"
+				alt="Logo da Lene's Cosméticos"
 				className=""
 			/>
 			<div className="flex items-center flex-col gap-8">
