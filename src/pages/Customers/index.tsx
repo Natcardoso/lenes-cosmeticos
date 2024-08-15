@@ -1,5 +1,6 @@
+/* Dependencies */
+import { useState } from 'react';
 import { Eye, SquarePen, Trash2 } from 'lucide-react';
-import { Menu } from '../../components/Menu';
 import {
 	useReactTable,
 	ColumnDef,
@@ -7,11 +8,13 @@ import {
 	getCoreRowModel,
 	getPaginationRowModel,
 } from '@tanstack/react-table';
-import { useState } from 'react';
+
+/* External */
+import { Menu } from '../../components/Menu';
+import { Input } from '../../components/Input';
+import { Button } from '../../components/Button';
 import { Sidebar } from '../../components/Sidebar';
 import { InputSearch } from '../../components/InputSearch';
-import { Button } from '../../components/Button';
-import { Input } from '../../components/Input';
 
 const data: ClientData[] = [
 	{
