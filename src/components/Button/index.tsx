@@ -1,7 +1,7 @@
 /* Dependencies */
 import { Plus } from 'lucide-react';
 
-type Props = { icon?: boolean; text: string; color?: string; onClick?: () => void};
+type Props = { icon?: boolean; text: string; color?: string; onClick?: () => void };
 
 export const Button = ({ icon, text, color, onClick }: Props) => {
 	return (

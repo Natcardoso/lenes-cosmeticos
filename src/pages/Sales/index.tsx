@@ -28,11 +28,10 @@ export const Sales = () => {
 						<Button
 							icon
 							text="Nova venda"
-              onClick={clickOpenModal}
+							onClick={clickOpenModal}
 						/>
-            {openModal && <Modal isCLosed={() => setOpenModal(false)} />}
+						{openModal && <Modal isCLosed={() => setOpenModal(false)} />}
 					</div>
-
 				</div>
 			</section>
 		</main>
