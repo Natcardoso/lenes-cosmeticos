@@ -512,6 +512,18 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.20.0.tgz#601fffee719a1e8447f908aca97864eec23b2784"
   integrity sha512-aJ1EJSuTdGnM6qbVC4B5DSmozPTqIag9fSzXRNNo+humQLG89XpPgdt16Ia56ORD7s+H8Pmyx44uczDQ0yDzpg==
 
+"@tanstack/react-table@^8.20.1":
+  version "8.20.1"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-table/-/react-table-8.20.1.tgz#bd2d549d8a18458fb8284025ce66a9b86176fa6b"
+  integrity sha512-PJK+07qbengObe5l7c8vCdtefXm8cyR4i078acWrHbdm8JKw1ES7YpmOtVt9ALUVEEFAHscdVpGRhRgikgFMbQ==
+  dependencies:
+    "@tanstack/table-core" "8.20.1"
+
+"@tanstack/table-core@8.20.1":
+  version "8.20.1"
+  resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.20.1.tgz#74bfab10fa35bed51fa0bd2f3539a331d7e78f1b"
+  integrity sha512-5Ly5TIRHnWH7vSDell9B/OVyV380qqIJVg7H7R7jU4fPEmOD4smqAX7VRflpYI09srWR8aj5OLD2Ccs1pI5mTg==
+
 "@types/babel__core@^7.20.5":
   version "7.20.5"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.20.5.tgz#3df15f27ba85319caa07ba08d0721889bb39c017"

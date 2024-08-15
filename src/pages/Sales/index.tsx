@@ -20,17 +20,19 @@ export const Sales = () => {
 			<Menu />
 			<section className="bg-white rounded-lg flex-1 p-5">
 				<h1 className="font-light tracking-[2rem] text-5xl uppercase">vendas</h1>
-
 				<div className="mt-14 flex gap-6">
 					<InputSearch />
 					<InputDate />
-					<Button
-						icone
-						text="Nova venda"
-						onClick={clickOpenModal}
-					/>
 
-					{openModal && <Modal isCLosed={() => setOpenModal(false)} />}
+					<div className="w-max">
+						<Button
+							icon
+							text="Nova venda"
+              onClick={clickOpenModal}
+						/>
+            {openModal && <Modal isCLosed={() => setOpenModal(false)} />}
+					</div>
+
 				</div>
 			</section>
 		</main>
