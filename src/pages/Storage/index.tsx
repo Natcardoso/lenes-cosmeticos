@@ -1,20 +1,20 @@
+/* Dependencies */
+import { useState } from 'react';
+
+/* Internal */
+import { SidebarStorage } from './SidebarStorage';
+
 /* External */
 import { Menu } from '../../components/Menu';
 import { Button } from '../../components/Button';
 import { Sidebar } from '../../components/Sidebar';
 import { InputSearch } from '../../components/InputSearch';
-import { useState } from 'react';
-import { Input } from '../../components/Input';
 
 export const Storage = () => {
 	const [openRegister, setOpenRegister] = useState(false);
 
 	const openModal = () => {
 		setOpenRegister(true);
-	};
-
-	const registerProduct = () => {
-		console.log('aaa');
 	};
 
 	return (
@@ -37,46 +37,7 @@ export const Storage = () => {
 							title="Cadastrar Produto"
 							isClose={() => setOpenRegister(false)}
 						>
-							<form className="flex flex-col justify-between h-full">
-								<div className="flex flex-col gap-6">
-									<Input
-										type="text"
-										label="Produto"
-										// value={dataProduct.name}
-										placeholder="Ex: Hidratante Tododia"
-										onChange={registerProduct}
-									/>
-
-									<p>Select Categoria</p>
-									<p>Select Marca</p>
-									<p>Select Gênero</p>
-
-									<div className="border-2 border-red-600 flex">
-										<Input
-											type="number"
-											label="Valor"
-											// value={dataProduct.name}
-											placeholder="0,00"
-											onChange={registerProduct}
-										/>
-										<Input
-											type="number"
-											label="Quantidade"
-											// value={dataProduct.name}
-											placeholder="0"
-											onChange={registerProduct}
-										/>
-									</div>
-								</div>
-
-								<div className="flex gap-4">
-									<Button
-										text="Cancelar"
-										color="bg-[#CC4444]"
-									/>
-									<Button text="Cadastrar" />
-								</div>
-							</form>
+							<SidebarStorage />
 						</Sidebar>
 					)}
 				</div>

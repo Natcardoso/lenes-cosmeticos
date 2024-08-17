@@ -6,7 +6,7 @@ type Props = {
 	onChange: () => void;
 };
 
-export const Input = ({ type, placeholder, label, value, onChange }: Props) => {
+export const InputLabel = ({ type, placeholder, label, value, onChange }: Props) => {
 	return (
 		<div className="flex flex-col gap-1">
 			<span>{label}</span>
