@@ -11,9 +11,9 @@ import {
 
 /* External */
 import { Menu } from '../../components/Menu';
-import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
 import { Sidebar } from '../../components/Sidebar';
+import { InputLabel } from '../../components/InputLabel';
 import { InputSearch } from '../../components/InputSearch';
 
 const data: ClientData[] = [
@@ -182,14 +182,14 @@ export const Customers = () => {
 						className="flex flex-col justify-between h-full"
 					>
 						<div className="flex flex-col gap-6">
-							<Input
+							<InputLabel
 								label="Nome"
 								type="text"
 								placeholder="Ex: Natália Almeida"
 								value={dataClient.name}
 								onChange={registerClient}
 							/>
-							<Input
+							<InputLabel
 								label="Telefone"
 								type="text"
 								placeholder="(00) 00000-0000"

@@ -4,9 +4,10 @@ type Props = {
 	type: 'text' | 'number' | 'date';
 	value: string | number;
 	onChange: () => void;
+	required?: boolean;
 };
 
-export const Input = ({ type, placeholder, label, value, onChange }: Props) => {
+export const InputLabel = ({ type, placeholder, label, value, onChange, required }: Props) => {
 	return (
 		<div className="flex flex-col gap-1">
 			<span>{label}</span>
@@ -16,6 +17,7 @@ export const Input = ({ type, placeholder, label, value, onChange }: Props) => {
 				placeholder={placeholder}
 				value={value}
 				onChange={onChange}
+				required={required}
 			/>
 		</div>
 	);
