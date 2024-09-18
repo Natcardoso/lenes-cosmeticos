@@ -4,10 +4,13 @@ import Select from 'react-select';
 /* External */
 import { Button } from '../../components/Button';
 import { InputLabel } from '../../components/InputLabel';
+import { useState } from 'react';
 
 export const SidebarStorage = () => {
-	const registerProduct = () => {
-		console.log('aaa');
+	const [nameProduct, setnameProduct] = useState('');
+
+	const registerProduct = (e) => {
+		setnameProduct(e.target.value);
 	};
 
 	const optionsCategory = [
@@ -16,8 +19,12 @@ export const SidebarStorage = () => {
 	];
 
 	const optionsMark = [
-		{ value: 'teste1', label: 'teste1' },
-		{ value: 'teste2', label: 'teste2' },
+		{ value: 'Avon', label: 'Avon' },
+		{ value: 'Eudora', label: 'Eudora' },
+		{ value: 'Jequiti', label: 'Jequiti' },
+		{ value: 'Mahogany', label: 'Mahogany' },
+		{ value: 'Natura', label: 'Natura' },
+		{ value: 'oBoticário', label: 'oBoticário' },
 	];
 
 	const optionsGender = [
@@ -32,9 +39,10 @@ export const SidebarStorage = () => {
 				<InputLabel
 					type="text"
 					label="Produto"
-					// value={dataProduct.name}
+					value={nameProduct}
 					placeholder="Ex: Hidratante Tododia"
 					onChange={registerProduct}
+					required
 				/>
 
 				<div className="flex flex-col gap-1">
@@ -44,7 +52,10 @@ export const SidebarStorage = () => {
 
 				<div className="flex flex-col gap-1">
 					<span>Select Marca</span>
-					<Select options={optionsMark} />
+					<Select
+						options={optionsMark}
+						required
+					/>
 				</div>
 
 				<div className="flex flex-col gap-1">
@@ -52,7 +63,7 @@ export const SidebarStorage = () => {
 					<Select options={optionsGender} />
 				</div>
 
-				<div className="border-2 border-red-600 flex gap-4">
+				<div className="border-2 border-red-600">
 					<InputLabel
 						type="number"
 						label="Valor"
